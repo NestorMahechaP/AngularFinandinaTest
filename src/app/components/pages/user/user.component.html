@@ -1,0 +1,32 @@
+<br>
+<br>
+<br>
+<form novalidate (ngSubmit)="onSubmit()" [formGroup]="userForm">
+    <div class="center col-md-10">
+            <div class="col-md-5 no-wrap label">Full name</div>
+            <div class="col-md-5 no-wrap">
+                <input type="text" placeholder="Name" formControlName="name">
+            </div>
+    </div>
+    <div class="center col-md-10">
+            <div class="col-md-5 no-wrap label">PhoneNumber</div>
+            <div class="col-md-5 no-wrap">
+                <input type="text" placeholder="PhoneNumber" formControlName="phoneNumber">
+            </div>
+    </div>
+    <div class="center col-md-10">
+        <div class="col-md-5 no-wrap label">Email address</div>
+        <div class="col-md-5 no-wrap">
+            <input type="text" placeholder="Email" formControlName="email">
+        </div>
+    </div>
+    <div class="center col-md-10">
+        <div class="col-md-5 no-wrap label">Nationality</div>
+        <div class="col-md-5 no-wrap">
+            <input type="text" placeholder="Write your nationality" formControlName="nationality">
+        </div>
+    </div>
+    <div class="center col-md-10">
+        <button type="submit">Create User</button>
+    </div>
+  </form>
